@@ -89,5 +89,12 @@ products.forEach((element, index) => {
 });
 //cau8
 console.log("cau8");
+console.log("sắp xếp tăng dần theo price");
 products.sort((a, b) => a.price - b.price);
 console.log(products);
+//cau9
+console.log("cau9");
+console.log("sắp xếp giảm dần theo count");
+products.sort((a, b) => b.count - a.count);
+console.log(products);
+//cau10
