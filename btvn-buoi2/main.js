@@ -98,3 +98,16 @@ console.log("sắp xếp giảm dần theo count");
 products.sort((a, b) => b.count - a.count);
 console.log(products);
 //cau10
+console.log("cau10");
+let nRandom = Math.floor(Math.random() * products.length);
+console.log("phần tử thứ 1: ", products[nRandom]);
+
+let isTrue = true;
+let nRandom2 = -1;
+while (isTrue) {
+    nRandom2 = Math.floor(Math.random() * products.length);
+    if (nRandom2 != nRandom) {
+        break;
+    }
+}
+console.log("phần tử thứ 2: ", products[nRandom2]);
