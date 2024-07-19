@@ -66,3 +66,17 @@ products.push({
         count: 2, // Số lượng sản phẩm trong giỏ hàng
     })
     //cau7
+console.log("xoá tất cả các sản phẩm từ thương hiệu Samsung trong giỏ hàng");
+products.forEach((element, index) => {
+    if (element.brand == "Samsung") {
+        products.splice(index, 1)
+    }
+});
+console.log("sau khi xoa");
+products.forEach((element, index) => {
+    console.log("giỏ hàng số:", (index + 1));
+    console.log(element.name);
+    console.log(element.price);
+    console.log(element.brand);
+    console.log(element.count);
+});
